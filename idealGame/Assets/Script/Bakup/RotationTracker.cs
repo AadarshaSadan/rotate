@@ -15,20 +15,20 @@ public class RotationTracker : MonoBehaviour {
 
     void Start()
     {
-        speedslider.value = 10f;
+        //speedslider.value = 10f;
 
     }
 
     void Update()
     {
 
-        TIme = Time.deltaTime;
+        //TIme = Time.deltaTime;
         if(onAnticlock)
             speed = -speedslider.value*1f;
         if(!onAnticlock)
             speed=speedslider.value * 1f;
-        V = speed / TIme; 
-        x += TIme * speed ;
+        //V = speed / TIme; 
+        x =speed ;
         //Debug.Log(speed);
            
 
