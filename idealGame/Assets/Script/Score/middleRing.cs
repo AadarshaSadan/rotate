@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 public class middleRing : MonoBehaviour {
 
+   // public int
     public bool middle;
     public int _Count;
-    public GameObject gameoverpanel;
-    public GameObject pauseswitch;
-    
+   
     void Start()
     {
         _Count = 1;
@@ -26,18 +25,17 @@ public class middleRing : MonoBehaviour {
         middle = true;
         _Count++;
       
-        FindObjectOfType<Total>().NegativevalueCount(1);
+       
       
     }
 
     private void OnTriggerExit(Collider other)
     {
+        FindObjectOfType<Total>().NegativevalueCount(1);
         middle = false;
-        gameoverpanel.SetActive(true);
         AudioSource sound = GameObject.Find("parent_fire").GetComponent<AudioSource>();
         sound.Play();
-        GameObject.Find("Eventcontroller").GetComponent<Btn>().Pause = true;
-        pauseswitch.SetActive(false);
+     
          
     }
 }

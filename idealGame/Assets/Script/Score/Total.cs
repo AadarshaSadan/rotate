@@ -14,6 +14,10 @@ public class Total : MonoBehaviour
     public int gameend;
     public bool EndGame;
 
+    public GameObject gameoverpanel;
+    public GameObject pauseswitch;
+
+
     private int count1 = 1;
 
     public GameObject point4;
@@ -47,8 +51,10 @@ public class Total : MonoBehaviour
     public int Re;
     public bool btnOn;
 
-
-
+    //Game life object true//false
+    public GameObject fstlife;
+    public GameObject secondlife;
+    public GameObject thirdife;
 
     void Start()
     {
@@ -89,7 +95,7 @@ public class Total : MonoBehaviour
 
         Getcoin = total / 5;
         // Debug.Log(Getcoin);
-      
+
 
 
 
@@ -121,7 +127,7 @@ public class Total : MonoBehaviour
 
     void Check_diff(int gameend)
     {
-       if (gameend < 2)
+        if (gameend < 2)
         {
             EndGame = true;
             velocityslide.interactable = false;
@@ -140,7 +146,27 @@ public class Total : MonoBehaviour
     public void NegativevalueCount(int count)
     {
         negativeball += count;
-        // Debug.Log("negative_ball=" + negativeball);
+        Debug.Log("negative_ball=" + negativeball);
+
+        if(negativeball==1)
+        {
+            thirdife.SetActive(false);
+        }
+        if(negativeball==2)
+        {
+            secondlife.SetActive(false);
+        }
+        if(negativeball==3)
+        {
+            fstlife.SetActive(false);
+            GameObject.Find("Eventcontroller").GetComponent<Btn>().Pause = true;
+            gameoverpanel.SetActive(true);
+            pauseswitch.SetActive(false);
+        }
+      
+      
+           
+
     }
 
 
