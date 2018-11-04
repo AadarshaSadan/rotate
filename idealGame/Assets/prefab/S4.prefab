@@ -9,46 +9,47 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1469415662915028}
+  m_RootGameObject: {fileID: 1291432831302328}
   m_IsPrefabAsset: 1
---- !u!1 &1469415662915028
+--- !u!1 &1291432831302328
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4018367352023948}
-  - component: {fileID: 33062769245322906}
-  - component: {fileID: 23826531883088860}
-  - component: {fileID: 135906729938257614}
-  - component: {fileID: 54902259557729020}
+  - component: {fileID: 4386452893625268}
+  - component: {fileID: 33103210449912404}
+  - component: {fileID: 23233092433476914}
+  - component: {fileID: 54345683353480834}
+  - component: {fileID: 135575057554895838}
+  - component: {fileID: 114096934218951200}
   m_Layer: 0
   m_Name: S4
-  m_TagString: s1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4018367352023948
+--- !u!4 &4386452893625268
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469415662915028}
+  m_GameObject: {fileID: 1291432831302328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.346, y: 0.296, z: 1.848}
-  m_LocalScale: {x: 0.06795546, y: 0.06795546, z: 0.06795546}
+  m_LocalPosition: {x: -1.346, y: 0.61, z: 1.848}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23826531883088860
+--- !u!23 &23233092433476914
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469415662915028}
+  m_GameObject: {fileID: 1291432831302328}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 0e2525cdce0768546b3acf7fd4fd9453, type: 2}
+  - {fileID: 2100000, guid: f294605bbd314ff4585ec074d2661893, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,19 +79,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33062769245322906
+--- !u!33 &33103210449912404
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469415662915028}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54902259557729020
+  m_GameObject: {fileID: 1291432831302328}
+  m_Mesh: {fileID: 4300000, guid: 04c3346cea22eef45994e05425905066, type: 3}
+--- !u!54 &54345683353480834
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469415662915028}
+  m_GameObject: {fileID: 1291432831302328}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -100,15 +101,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &135906729938257614
+--- !u!114 &114096934218951200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291432831302328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43919a1fd91faae488b54d2e793a645e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlat: 1
+--- !u!135 &135575057554895838
 SphereCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1469415662915028}
-  m_Material: {fileID: 13400000, guid: 27ad8bcf921041f4caf2c9fb151c6240, type: 2}
+  m_GameObject: {fileID: 1291432831302328}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.010000001
+  m_Center: {x: -0.0000000023283062, y: -0.000000001862645, z: 0}

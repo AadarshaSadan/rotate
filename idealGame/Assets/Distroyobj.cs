@@ -21,7 +21,7 @@ public class Distroyobj : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log(other.gameObject.name);
-        Destroy(other.gameObject);
+       
         if (other.name.Contains("S1"))
         {
             GameObject.Find("Point1").GetComponent<Ball>().TimetoGenerateNewball();
@@ -42,6 +42,33 @@ public class Distroyobj : MonoBehaviour
             GameObject.Find("Point4").GetComponent<Ball>().TimetoGenerateNewball();
 
         }
+        else if (other.name.Contains("S5"))
+        {
+            GameObject.Find("Point5").GetComponent<Ball>().TimetoGenerateNewball();
+
+        }
+        else if (other.name.Contains("S6"))
+        {
+            GameObject.Find("Point6").GetComponent<Ball>().TimetoGenerateNewball();
+
+        }
+        else if (other.name.Contains("S7"))
+        {
+            GameObject.Find("Point7").GetComponent<Ball>().TimetoGenerateNewball();
+
+        }
+        else if (other.name.Contains("S8"))
+        {
+            GameObject.Find("Point8").GetComponent<Ball>().TimetoGenerateNewball();
+
+        }
+        else if (other.name.Contains("S9"))
+        {
+            GameObject.Find("Point9").GetComponent<Ball>().TimetoGenerateNewball();
+
+        }
+        Destroy(other.gameObject);
+
     }
 }
 

@@ -77,6 +77,8 @@
     <Compile Include="Assets\Script\camera.cs" />
     <Compile Include="Assets\Script\measure.cs" />
     <Compile Include="Assets\Script\menuScript\Scenechange.cs" />
+    <Compile Include="Assets\Script\menuScript\SequentialAnimator.cs" />
+    <Compile Include="Assets\Script\orientation.cs" />
     <Compile Include="Assets\Script\practiceScript\score.cs" />
     <Compile Include="Assets\Script\Score\firstring.cs" />
     <Compile Include="Assets\Script\Score\middleRing.cs" />

@@ -2,6 +2,7 @@ Android
 PlayerPath?
 A:/KARUWA/project4/idealGame/run/idealgame.apk
 SceneListBegin?
+Assets/Scenes/Backup.unity
 Assets/Scenes/Game.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -192,3 +193,5 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 bdf15c5eb495f7339d90dfbc6967f278 Assembly-CSharp.dll:.Ball
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+54582099cad7c4076d77f1b555047cb0 Assembly-CSharp.dll:.orientation
+8565b7917e74b43b8d20da77246e7f16 Assembly-CSharp.dll:.SequentialAnimator

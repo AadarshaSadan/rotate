@@ -73,11 +73,11 @@ public class Total : MonoBehaviour
 
         if (total >= 0)
             point2.SetActive(true);
-        if (total > 4)
+        if (total > 1)
             point1.SetActive(true);
-        if (total > 10)
+        if (total > 5)
             point3.SetActive(true);
-        if (total > 18)
+        if (total > 10)
             point4.SetActive(true);
 
 
