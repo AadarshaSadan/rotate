@@ -30,9 +30,9 @@ public class RotationTracker : MonoBehaviour {
         //V = speed / TIme; 
         x =speed ;
         //Debug.Log(speed);
-           
 
-        
+
+
         transform.rotation = Quaternion.Euler(0f, x, 0f);
     }
 

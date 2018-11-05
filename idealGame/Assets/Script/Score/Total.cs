@@ -156,12 +156,13 @@ public class Total : MonoBehaviour
         {
             secondlife.SetActive(false);
         }
-        if(negativeball==3)
+        if(negativeball>=3)
         {
             fstlife.SetActive(false);
             GameObject.Find("Eventcontroller").GetComponent<Btn>().Pause = true;
             gameoverpanel.SetActive(true);
             pauseswitch.SetActive(false);
+            Time.timeScale = 0;
         }
       
       
