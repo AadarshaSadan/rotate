@@ -19,7 +19,7 @@ public class firstring : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         OnRing1 = true;
-        _count++;
+        //_count++;
         FindObjectOfType<Total>().Total_value(1);
         AudioSource sound = GameObject.Find("Ground").GetComponent<AudioSource>();
         sound.Play();

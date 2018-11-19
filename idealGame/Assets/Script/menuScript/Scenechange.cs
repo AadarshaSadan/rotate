@@ -10,7 +10,7 @@ public class Scenechange : MonoBehaviour {
 
    public void nextscene()
     {
-        SceneManager.LoadScene("Game");
+      
     }
 
 

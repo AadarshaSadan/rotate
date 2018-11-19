@@ -12,8 +12,8 @@ public class thirdRing : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         OnRing2 = true;
-        ___count = ___count + 5;
-        FindObjectOfType<Total>().Total_value(5);
+        ___count = ___count + 1;
+        FindObjectOfType<Total>().Total_value(1);
         AudioSource sound = GameObject.Find("Ground").GetComponent<AudioSource>();
         sound.Play();
        

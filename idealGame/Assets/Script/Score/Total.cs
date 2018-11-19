@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -29,6 +30,17 @@ public class Total : MonoBehaviour
     public GameObject point7;
     public GameObject point8;
     public GameObject point9;
+
+    //Game object to update each ball and count to level upgrade
+    public GameObject firstball;
+    public GameObject secondball;
+    public GameObject thirdball;
+    public GameObject fourthball;
+    public GameObject fifthball;
+    public GameObject sixthball;
+    public GameObject sevenball;
+
+
 
     public int Getcoin;
     public Slider velocityslide;
@@ -104,24 +116,38 @@ public class Total : MonoBehaviour
 
     public void getvalue()
     {
-
-
-        Getcoin = Getcoin - 1;
+        //Getcoin = Getcoin - 1;
         if (Getcoin == 1)
             btnOn = true;
 
-        total = total - 5;
+        //total = total - 5;
         coincount.text = Getcoin.ToString();
         TotalAll.text = total.ToString();
-
-
     }
 
     public void Total_value(int a)
     {
-
         total += a;
-        //Debug.Log(total);
+        Debug.Log("This is total value:-" + total);
+
+        if (total >= 1)
+            firstball.SetActive(true);
+        if (total >= 2)
+            secondball.SetActive(true);
+        if (total >= 3)
+            thirdball.SetActive(true);
+        if (total >= 4)
+            fourthball.SetActive(true);
+        if (total >= 5)
+            fifthball.SetActive(true);
+        if (total >= 6)
+            sixthball.SetActive(true);
+        if (total >= 7)
+        {
+            sevenball.SetActive(true);
+            SceneManager.LoadScene("Level2");
+        }
+        
 
     }
 
@@ -148,15 +174,15 @@ public class Total : MonoBehaviour
         negativeball += count;
         Debug.Log("negative_ball=" + negativeball);
 
-        if(negativeball==1)
+        if (negativeball == 1)
         {
             thirdife.SetActive(false);
         }
-        if(negativeball==2)
+        if (negativeball == 2)
         {
             secondlife.SetActive(false);
         }
-        if(negativeball>=3)
+        if (negativeball >= 3)
         {
             fstlife.SetActive(false);
             GameObject.Find("Eventcontroller").GetComponent<Btn>().Pause = true;
@@ -164,9 +190,9 @@ public class Total : MonoBehaviour
             pauseswitch.SetActive(false);
             Time.timeScale = 0;
         }
-      
-      
-           
+
+
+
 
     }
 
