@@ -165,7 +165,7 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.49999905
-        value: 0.12328309
+        value: 0.10977143
         inSlope: 1.9553998
         outSlope: 1.9553998
         tangentMode: 0

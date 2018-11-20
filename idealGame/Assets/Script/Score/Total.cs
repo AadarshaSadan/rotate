@@ -145,7 +145,7 @@ public class Total : MonoBehaviour
         if (total >= 7)
         {
             sevenball.SetActive(true);
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("Game");
         }
         
 

@@ -118,7 +118,7 @@ TrailRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 0b46c59269533db47ae84fa8e27539ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -138,7 +138,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 1.5
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -146,49 +146,22 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.026882172
-        value: 0.15068054
-        inSlope: 0
-        outSlope: 0
+        time: 4.656613e-10
+        value: 0.09459548
+        inSlope: -0.18243541
+        outSlope: -0.18243541
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.30600974
       - serializedVersion: 3
-        time: 0.30637023
-        value: 0.04006896
-        inSlope: -0.50223756
-        outSlope: -0.50223756
+        time: 0.9788474
+        value: 0.013511658
+        inSlope: -0.054346535
+        outSlope: -0.054346535
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.49999905
-        value: 0.12328309
-        inSlope: 1.9553998
-        outSlope: 1.9553998
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.6142857
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.5899848
-        value: 0.05175814
-        inSlope: -0.32131332
-        outSlope: -0.32131332
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.795699
-        value: 0.041092157
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
+        inWeight: 0.25406274
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -196,7 +169,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -227,7 +200,7 @@ TrailRenderer:
     alignment: 0
     textureMode: 0
     generateLightingData: 0
-  m_MinVertexDistance: 2
+  m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
 --- !u!114 &114096934218951200
