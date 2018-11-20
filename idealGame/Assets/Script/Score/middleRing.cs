@@ -24,18 +24,17 @@ public class middleRing : MonoBehaviour {
     {
         middle = true;
         _Count++;
-      
+        FindObjectOfType<Total>().NegativevalueCount(1);
        
-      
+        AudioSource sound = GameObject.Find("parent_fire").GetComponent<AudioSource>();
+        sound.Play();
+
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-        FindObjectOfType<Total>().NegativevalueCount(1);
         middle = false;
-        AudioSource sound = GameObject.Find("parent_fire").GetComponent<AudioSource>();
-        sound.Play();
-     
-         
+
     }
 }
