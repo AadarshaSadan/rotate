@@ -7,7 +7,7 @@ public class Ball : MonoBehaviour
 {
     //private GameObject[] spwanpoint;
     public GameObject Ball_prefab;
-     GameObject ballclone;
+    GameObject ballclone;
 
 
     private void Start()

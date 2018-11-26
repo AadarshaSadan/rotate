@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 135308446652812288}
   - component: {fileID: 114521394181570426}
   - component: {fileID: 96521121639883628}
+  - component: {fileID: 114362261622029618}
   m_Layer: 0
   m_Name: S3
   m_TagString: Untagged
@@ -203,6 +204,17 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &114362261622029618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304837508500154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f0b3d4df656d24bafb89b95086f596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114521394181570426
 MonoBehaviour:
   m_ObjectHideFlags: 1

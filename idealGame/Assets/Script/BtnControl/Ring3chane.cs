@@ -14,7 +14,8 @@ public class Ring3chane : MonoBehaviour {
     public GameObject sub22;
     public GameObject Ringthreeobj;
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         change = this.GetComponent<Image>();
         change.sprite = brownBg;
         sub21.SetActive(true);
@@ -30,8 +31,6 @@ public class Ring3chane : MonoBehaviour {
             sub21.SetActive(false);
             sub22.SetActive(true);
             Ringthreeobj.GetComponent<RotationTracker>().enabled=true;
-  
-            
         }
 
         if (!Eventcontroller.GetComponent<Btn>().RingThree)

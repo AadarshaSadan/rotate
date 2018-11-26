@@ -62,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Distroyobj.cs" />
+    <Compile Include="Assets\GenerateaRand.cs" />
+    <Compile Include="Assets\prefab\GravityIncrease.cs" />
+    <Compile Include="Assets\RandomNumber.cs" />
     <Compile Include="Assets\Script\AngularVelocity.cs" />
     <Compile Include="Assets\Script\Bakup\rotate2.cs" />
     <Compile Include="Assets\Script\Bakup\RotationTracker.cs" />
@@ -75,6 +78,8 @@
     <Compile Include="Assets\Script\BtnControl\Ringtouch.cs" />
     <Compile Include="Assets\Script\BtnControl\Spritechange.cs" />
     <Compile Include="Assets\Script\camera.cs" />
+    <Compile Include="Assets\Script\increaseGravity.cs" />
+    <Compile Include="Assets\Script\Level_identifier.cs" />
     <Compile Include="Assets\Script\measure.cs" />
     <Compile Include="Assets\Script\menuScript\Scenechange.cs" />
     <Compile Include="Assets\Script\menuScript\SequentialAnimator.cs" />
