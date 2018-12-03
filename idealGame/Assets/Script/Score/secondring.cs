@@ -13,8 +13,12 @@ public class secondring : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         OnRing2 = true;
+        if (other.gameObject.name == "Enemy")
+        {
+            FindObjectOfType<Btn>().Pause = true;
+        }
         __count = __count + 2;
-        FindObjectOfType<Total>().Total_value(3);
+        FindObjectOfType<Total>().Total_value(1);
         AudioSource sound = GameObject.Find("Ground").GetComponent<AudioSource>();
         sound.Play();
        

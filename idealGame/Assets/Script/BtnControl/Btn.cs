@@ -14,10 +14,12 @@ public class Btn : MonoBehaviour
     public bool RingOne;
     public bool RingTwo;
     public bool RingThree;
-
+    public string S_name;
     // Use this for initialization
     void Start()
     {
+        S_name = SceneManager.GetActiveScene().name;
+
         RingOne = true;
         RingTwo = true;
         RingThree = true;
@@ -82,7 +84,7 @@ public class Btn : MonoBehaviour
 
     public void Gameovergotomain()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(S_name);
     }
 
 }

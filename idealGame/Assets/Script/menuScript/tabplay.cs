@@ -15,7 +15,7 @@ public class tabplay : MonoBehaviour {
 
         if(Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("Game");
+           SceneManager.LoadScene("Game");
         }
 		
 	}

@@ -16,6 +16,11 @@ public class thirdRing : MonoBehaviour {
         FindObjectOfType<Total>().Total_value(1);
         AudioSource sound = GameObject.Find("Ground").GetComponent<AudioSource>();
         sound.Play();
+
+        if(other.gameObject.name== "Enemy")
+        {
+            FindObjectOfType<Btn>().Pause = true;
+        }
        
     }
 

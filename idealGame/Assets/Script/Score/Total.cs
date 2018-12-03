@@ -41,6 +41,12 @@ public class Total : MonoBehaviour
     public GameObject eightball;
     public GameObject nineball;
     public GameObject tenball;
+    public GameObject elevenball;
+    public GameObject twelveball;
+    public GameObject thirteenball;
+    public GameObject fourteenball;
+    public GameObject fifteenball;
+    public GameObject sixteenball;
 
 
 
@@ -88,37 +94,8 @@ public class Total : MonoBehaviour
     {
 
         Scene_Name = SceneManager.GetActiveScene();
+        Debug.Log(Scene_Name.name);
         total = 0;
-
-
-        int[] RandomNumber = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
-        float Randomss = Random.Range(1, RandomNumber.Length);
-        float Random1 = Random.Range(1, RandomNumber.Length);
-        float Random2 = Random.Range(1, RandomNumber.Length);
-        //float Random3 = Random.Range(1, RandomNumber.Length);
-        //float Random4= Random.Range(1, RandomNumber.Length);
-        //float Random5 = Random.Range(1, RandomNumber.Length);
-
-        stringpoint = Randomss.ToString();
-        stringpoint1 = Random1.ToString();
-        stringpoint2 = Random2.ToString();
-        //stringpoint3 = Random2.ToString();
-
-        //stringpoint4 = Random2.ToString();
-        //stringpoint5 = Random2.ToString();
-        //stringpoint6 = Random2.ToString();
-        //stringpoint7 = Random2.ToString();
-        Debug.Log(stringpoint);
-        Debug.Log(stringpoint1);
-
-        point1.SetActive(true);
-        point2.SetActive(true);
-        point3.SetActive(true);
-
-
-
-
-
     }
 
     //Update is called once per frame
@@ -126,31 +103,158 @@ public class Total : MonoBehaviour
     {
         TotalAll.text = total.ToString();
         mystring = GameObject.Find("Downcollider").GetComponent<Distroyobj>().pointvaluestring;
-        Debug.Log("my string " + mystring);
 
-        /* if (total >= 0)
-             point2.SetActive(true);
-         if (total > 1)
-             point1.SetActive(true);
-         if (total > 5)
-             point3.SetActive(true);
-         if (total > 10)
-             point4.SetActive(true);
-         if (total > 15)
-             point5.SetActive(true);
-         if (total > 20)
-             point6.SetActive(true);
-         if (total > 25)
-             point7.SetActive(true);
-         if (total > 26)
-             point8.SetActive(true);
-         if (total > 30)
-             point9.SetActive(true);
+        if(total>=8)
+        {
+            if (Scene_Name.name== "Game")
+            {
+                SceneManager.LoadScene("Level1");
+            }
+            if (Scene_Name.name == "Level1")
+            {
+                SceneManager.LoadScene("Level2");
+            }
 
-     */
+            if (Scene_Name.name == "Level2")
+            {
+                SceneManager.LoadScene("Level3");
+            }
 
-        Getcoin = total / 5;
-        // Debug.Log(Getcoin);
+            if (Scene_Name.name == "Level3")
+            {
+                SceneManager.LoadScene("Level4");
+            }
+
+            if (Scene_Name.name == "Level4")
+            {
+                SceneManager.LoadScene("Level5");
+            }
+
+            if (Scene_Name.name == "Level5")
+            {
+                SceneManager.LoadScene("Level6");
+            }
+            if (Scene_Name.name == "Level6")
+            {
+                SceneManager.LoadScene("Level7");
+            }
+
+            if (Scene_Name.name == "Level7")
+            {
+                SceneManager.LoadScene("Level8");
+
+            }
+
+
+            if (Scene_Name.name == "Level8")
+            {
+                SceneManager.LoadScene("Level9");
+            }
+
+
+            if (Scene_Name.name == "Level9")
+            {
+                SceneManager.LoadScene("Level10");
+            }
+
+
+            if (Scene_Name.name == "Level10")
+            {
+                SceneManager.LoadScene("Level11");
+            }
+
+
+            if (Scene_Name.name == "Level11")
+            {
+                SceneManager.LoadScene("Level12");
+            }
+
+            if (Scene_Name.name == "Level12")
+            {
+                SceneManager.LoadScene("Level13");
+            }
+
+            if (Scene_Name.name == "Level13")
+            {
+                SceneManager.LoadScene("Level4");
+            }
+
+        }
+
+        //reducing the numbber of ball
+        if (Scene_Name.name == "Game")
+        {
+            ReduceEightBallTotal(total);
+        }
+        if (Scene_Name.name == "Level1")
+        {
+            ReduceEightBallTotal(total);
+        }
+
+        if (Scene_Name.name == "Level2")
+        {
+            ReduceEightBallTotal(total);
+        }
+
+        if (Scene_Name.name == "Level3")
+        {
+            ReduceEightBallTotal(total);
+
+        }
+
+        if (Scene_Name.name == "Level4")
+        {
+            ReduceEightBallTotal(total);
+        }
+
+        if (Scene_Name.name == "Level5")
+        {
+            
+        }
+        if (Scene_Name.name == "Level6")
+        {
+            
+        }
+
+        if (Scene_Name.name == "Level7")
+        {
+            
+
+        }
+
+
+        if (Scene_Name.name == "Level8")
+        {
+            SceneManager.LoadScene("Level9");
+        }
+
+
+        if (Scene_Name.name == "Level9")
+        {
+            SceneManager.LoadScene("Level10");
+        }
+
+
+        if (Scene_Name.name == "Level10")
+        {
+            SceneManager.LoadScene("Level11");
+        }
+
+
+        if (Scene_Name.name == "Level11")
+        {
+            SceneManager.LoadScene("Level12");
+        }
+
+        if (Scene_Name.name == "Level12")
+        {
+            SceneManager.LoadScene("Level13");
+        }
+
+        if (Scene_Name.name == "Level13")
+        {
+            SceneManager.LoadScene("Level4");
+        }
 
 
 
@@ -171,42 +275,9 @@ public class Total : MonoBehaviour
 
     public void Total_value(int a)
     {
-
-
         total += a;
-        Debug.Log("This is total value:-" + total);
-
-        if (total >= 1)
-            firstball.SetActive(true);
-        if (total >= 2)
-            secondball.SetActive(true);
-        if (total >= 3)
-            thirdball.SetActive(true);
-        if (total >= 4)
-            fourthball.SetActive(true);
-        if (total >= 5)
-            fifthball.SetActive(true);
-        if (total >= 6)
-            sixthball.SetActive(true);
-        if (total >= 7)
-            sevenball.SetActive(true);
-        if (total >= 8 && Scene_Name.name == "Game")
-        {
-            eightball.SetActive(true);
-            SceneManager.LoadScene("Level1");
-        }
-        if (total >= 8 && Scene_Name.name == "Level1")
-        {
-            eightball.SetActive(true);
-            SceneManager.LoadScene("Level2");
-        }
-
-
-
-
-
-
     }
+
 
     void Check_diff(int gameend)
     {
@@ -253,10 +324,33 @@ public class Total : MonoBehaviour
 
     }
 
-    private void Reset_Total(Scene S)
+    public void ReduceEightBallTotal(int valueoftotal)
     {
-        Debug.Log(S.name);
+
+        if (total >= 8)
+            firstball.SetActive(false);
+        if (total >= 7)
+            secondball.SetActive(false);
+        if (total >= 6)
+            thirdball.SetActive(false);
+        if (total >= 5)
+            fourthball.SetActive(false);
+        if (total >= 4)
+            fifthball.SetActive(false);
+        if (total >= 3)
+            sixthball.SetActive(false);
+        if (total >= 2)
+            sevenball.SetActive(false);
+        if (total >= 1)
+            eightball.SetActive(false);
+
     }
+
+
+
+
+
+
 
 
 }

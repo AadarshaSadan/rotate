@@ -18,8 +18,14 @@ public class firstring : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+       
+       
         OnRing1 = true;
         //_count++;
+        if (other.name == "Enemy")
+        {
+            FindObjectOfType<Btn>().Pause = true;
+        }
         FindObjectOfType<Total>().Total_value(1);
         AudioSource sound = GameObject.Find("Ground").GetComponent<AudioSource>();
         sound.Play();

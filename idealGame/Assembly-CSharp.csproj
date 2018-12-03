@@ -63,8 +63,11 @@
   <ItemGroup>
     <Compile Include="Assets\Distroyobj.cs" />
     <Compile Include="Assets\GenerateaRand.cs" />
+    <Compile Include="Assets\instianciate\BallRandom.cs" />
+    <Compile Include="Assets\instianciate\tiggred.cs" />
     <Compile Include="Assets\prefab\GravityIncrease.cs" />
-    <Compile Include="Assets\RandomNumber.cs" />
+    <Compile Include="Assets\RandomSpwan.cs" />
+    <Compile Include="Assets\RNumber.cs" />
     <Compile Include="Assets\Script\AngularVelocity.cs" />
     <Compile Include="Assets\Script\Bakup\rotate2.cs" />
     <Compile Include="Assets\Script\Bakup\RotationTracker.cs" />
@@ -72,6 +75,7 @@
     <Compile Include="Assets\Script\Ball.cs" />
     <Compile Include="Assets\Script\ball1.cs" />
     <Compile Include="Assets\Script\BtnControl\Btn.cs" />
+    <Compile Include="Assets\Script\BtnControl\btn_setting.cs" />
     <Compile Include="Assets\Script\BtnControl\Ring1chane.cs" />
     <Compile Include="Assets\Script\BtnControl\Ring2chane.cs" />
     <Compile Include="Assets\Script\BtnControl\Ring3chane.cs" />

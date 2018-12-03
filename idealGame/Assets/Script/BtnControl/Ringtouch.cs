@@ -54,7 +54,8 @@ public class Ringtouch : MonoBehaviour
 
             //  Debug.Log(hit.collider.transform.parent.gameObject.name);
         }
-        offRotationall();
+        //by clcking the ring Ring will stop Rotate
+       // offRotationall();
 
 
     }

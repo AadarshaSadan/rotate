@@ -10,14 +10,27 @@ public class increaseGravity : MonoBehaviour {
         scene_name = SceneManager.GetActiveScene();  
         if (scene_name.name == "Game")
         {
-            Physics.gravity = new Vector3(0f, -8.9f, 0f);
+            Physics.gravity = new Vector3(0f, -2.00f, 0f);
           
         }
         if (scene_name.name == "Level1")
         {
-            Physics.gravity = new Vector3(0f, -20.2f, 0f);
+            Physics.gravity = new Vector3(0f, -9.1f, 0f);
 
         }
+        if(scene_name.name=="Level2")
+        {
+            Physics.gravity = new Vector3(0f, -15.81f, 0f);
+        }
+        if (scene_name.name == "Level3")
+        {
+            Physics.gravity = new Vector3(0f, -30.0f, 0f);
+        }
+        if (scene_name.name == "Level4")
+        {
+            Physics.gravity = new Vector3(0f, -50.0f, 0f);
+        }
+
 
     }
 

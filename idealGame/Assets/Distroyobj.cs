@@ -7,18 +7,6 @@ public class Distroyobj : MonoBehaviour
 {
     public bool isDestroy;
 
-    public GameObject point1;
-    public GameObject point2;
-    public GameObject point3;
-    public GameObject point4;
-    public GameObject point5;
-    public GameObject point6;
-    public GameObject point7;
-    public GameObject point8;
-    public GameObject point9;
-    public GameObject point10;
-    public GameObject point11;
-    public GameObject point12;
 
     public string pointvaluestring;
 
@@ -38,7 +26,7 @@ public class Distroyobj : MonoBehaviour
     {
         //Debug.Log(other.gameObject.name);
      
-
+/*
 
         //Debug.Log("Random number:-  " + s);
 
@@ -86,7 +74,7 @@ public class Distroyobj : MonoBehaviour
         {
             GameObject.Find("Point9").GetComponent<Ball>().TimetoGenerateNewball();
 
-        }
+        }*/
         Destroy(other.gameObject);
 
     }
