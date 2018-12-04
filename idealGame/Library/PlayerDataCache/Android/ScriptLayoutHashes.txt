@@ -2,12 +2,14 @@ Android
 PlayerPath?
 A:/KARUWA/project4/idealGame/run/idealgame.apk
 SceneListBegin?
+Assets/Scenes/splash.unity
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
 Assets/Scenes/Level1.unity
 Assets/Scenes/Level2.unity
 Assets/Scenes/Level3.unity
 Assets/Scenes/Level4.unity
+Assets/Scenes/Level5.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -174,7 +176,7 @@ fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networki
 7ca56e063bd071986fff4f513cc4f477 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 c89d9884c12f15cae432282b22ce8d30 Assembly-CSharp.dll:.tiggred
 d3f3df65fbdaa3855f28fb87516365b8 Assembly-CSharp.dll:.ScreenShotCapturer
-dcb6ee28edd559b935310c45416f4b23 Assembly-CSharp.dll:.Total
+19af8dc631b937785ce500bf27fd8d3e Assembly-CSharp.dll:.Total
 8be555f88f668fbd6d1df506c8adb0dd Assembly-CSharp.dll:.Ring2chane
 72a8523b432c0a5317826b7a9e0a0e79 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 e53cc67d84060d628c7f03fc725766d8 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
@@ -209,3 +211,4 @@ bdf15c5eb495f7339d90dfbc6967f278 Assembly-CSharp.dll:.Ball
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 54582099cad7c4076d77f1b555047cb0 Assembly-CSharp.dll:.orientation
 6eb41ad2968bf8698ef34b7fcbf110fa Assembly-CSharp.dll:.btn_setting
+49a866904eb593390cd6eb9844cf43ec Assembly-CSharp.dll:.splash

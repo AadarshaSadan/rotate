@@ -6,15 +6,18 @@ using UnityEngine.UI;
 public class firstring : MonoBehaviour {
     public bool OnRing1;
     public int _count = 1;
+   
+    
+
 // Use this for initialization
-	void Start () {
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+       
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,10 +25,7 @@ public class firstring : MonoBehaviour {
        
         OnRing1 = true;
         //_count++;
-        if (other.name == "Enemy")
-        {
-            FindObjectOfType<Btn>().Pause = true;
-        }
+        
         FindObjectOfType<Total>().Total_value(1);
         AudioSource sound = GameObject.Find("Ground").GetComponent<AudioSource>();
         sound.Play();

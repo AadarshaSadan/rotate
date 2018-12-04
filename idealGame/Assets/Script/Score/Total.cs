@@ -16,20 +16,11 @@ public class Total : MonoBehaviour
 
     public GameObject gameoverpanel;
     public GameObject pauseswitch;
+    public GameObject ballPanel;
+
 
 
     private int count1 = 1;
-
-    public GameObject point4;
-    public GameObject point1;
-    public GameObject point2;
-    public GameObject point3;
-    public GameObject point5;
-    public GameObject point6;
-    public GameObject point7;
-    public GameObject point8;
-    public GameObject point9;
-
     //Game object to update each ball and count to level upgrade
     public GameObject firstball;
     public GameObject secondball;
@@ -88,13 +79,19 @@ public class Total : MonoBehaviour
     private string stringpoint8;
 
     Scene Scene_Name;
+    private int randomnumber;
+    public Transform Enemyprefab;
 
-
+    private bool Enemyon=false;
     void Start()
     {
 
         Scene_Name = SceneManager.GetActiveScene();
         Debug.Log(Scene_Name.name);
+
+        randomnumber= Random.Range(1, 7);
+        Debug.Log("the random number is " + randomnumber);
+
         total = 0;
     }
 
@@ -103,6 +100,20 @@ public class Total : MonoBehaviour
     {
         TotalAll.text = total.ToString();
         mystring = GameObject.Find("Downcollider").GetComponent<Distroyobj>().pointvaluestring;
+        int s = total;
+        if(s==randomnumber)
+        {
+            s = 555;
+         
+            if (Enemyon==false)
+            {
+                RandomBallinstianciate();
+                Enemyon = true;
+         
+            }
+
+        }
+
 
         if(total>=8)
         {
@@ -312,11 +323,7 @@ public class Total : MonoBehaviour
         }
         if (negativeball >= 3)
         {
-            fstlife.SetActive(false);
-            GameObject.Find("Eventcontroller").GetComponent<Btn>().Pause = true;
-            gameoverpanel.SetActive(true);
-            pauseswitch.SetActive(false);
-            Time.timeScale = 0;
+            GameOverGame();
         }
 
 
@@ -345,6 +352,29 @@ public class Total : MonoBehaviour
             eightball.SetActive(false);
 
     }
+
+    public void RandomBallinstianciate()
+    {
+        float X_postion = Random.Range(-4.0f, 4.0f);
+        float Z_position = Random.Range(-4.0f, 4.0f);
+        Debug.Log(X_postion);
+        Debug.Log(Z_position);
+        Vector3 position = new Vector3(X_postion, 0.48f, Z_position);
+        // transform.position = Random.insideUnitCircle * 5;
+        Instantiate(Enemyprefab, position, Quaternion.identity);
+    }
+
+   public void GameOverGame()
+    {
+        fstlife.SetActive(false);
+        ballPanel.SetActive(false);
+        GameObject.Find("Eventcontroller").GetComponent<Btn>().Pause = true;
+        gameoverpanel.SetActive(true);
+        pauseswitch.SetActive(false);
+        Time.timeScale = 0;
+    }
+
+
 
 
 

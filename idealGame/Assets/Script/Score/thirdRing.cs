@@ -19,7 +19,7 @@ public class thirdRing : MonoBehaviour {
 
         if(other.gameObject.name== "Enemy")
         {
-            FindObjectOfType<Btn>().Pause = true;
+            FindObjectOfType<Total>().GameOverGame();
         }
        
     }
